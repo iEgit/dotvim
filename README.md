@@ -10,7 +10,7 @@ git submodule update --recursive
 
 // be careful here
 cd ~
-cat ~/dotvim > ~/.vimrc
+cat ~/dotvim/.vimrc > ~/.vimrc
 mv ~/dotvim ~/.vim
 
 ```
