@@ -1,0 +1,84 @@
+[submodule "breeze.vim"]
+	name = breeze.vim
+	path = bundle/breeze.vim
+	url = https://github.com/gcmt/breeze.vim.git
+[submodule "ctrlp.vim"]
+	name = ctrlp.vim
+	path = bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "delimitMate"]
+	name = delimitMate
+	path = bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "nerdtree"]
+	name = nerdtree
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "tcomment_vim"]
+	name = tcomment_vim
+	path = bundle/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "tlib_vim"]
+	name = tlib_vim
+	path = bundle/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "ultisnips"]
+	name = ultisnips
+	path = bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "vim-addon-mw-utils"]
+	name = vim-addon-mw-utils
+	path = bundle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "vim-airline"]
+	name = vim-airline
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "vim-colorschemes"]
+	name = vim-colorschemes
+	path = bundle/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "vim-fugitive"]
+	name = vim-fugitive
+	path = bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "vim-gitgutter"]
+	name = vim-gitgutter
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vim-indent-guides"]
+	name = vim-indent-guides
+	path = bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "vim-javascript"]
+	name = vim-javascript
+	path = bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim-javascript-syntax"]
+	name = vim-javascript-syntax
+	path = bundle/vim-javascript-syntax
+	url = https://github.com/jelera/vim-javascript-syntax.git
+[submodule "vim-nerdtree-tabs"]
+	name = vim-nerdtree-tabs
+	path = bundle/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "vim-sensible"]
+	name = vim-sensible
+	path = bundle/vim-sensible
+	url = git://github.com/tpope/vim-sensible.git
+[submodule "vim-smooth-scroll"]
+	name = vim-smooth-scroll/
+	path = bundle/vim-smooth-scroll
+	url = https://github.com/terryma/vim-smooth-scroll.git
+[submodule "vim-snipmate"]
+	name = vim-snipmate
+	path = bundle/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "vim-surround"]
+	name = vim-surround
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vundle"]
+	name = vundle
+	path = bundle/vundle
+	url = https://github.com/gmarik/vundle.git
