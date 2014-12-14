@@ -167,6 +167,7 @@ Bundle 'jistr/vim-nerdtree-tabs'
 " nerdtree autostart
 autocmd vimenter * NERDTreeTabsOpen
 let g:nerdtree_tabs_autofind=1
+let NERDTreeShowHidden=1
 
 " keepin' highlight while tabbing
 vnoremap > ><CR>gv
@@ -174,15 +175,15 @@ vnoremap < <<CR>gv
 
 map <Esc><Esc> :w<CR>
 
+" local configs
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
+" remove whitespaces
 autocmd BufWritePre *.js,*.styl,*.c,*.cc,*.py,*.yate :%s/\s\+$//ei
 
-" remove whitespaces
-autocmd BufWritePre * :%s/\s\+$//e
 
 " cursor
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-let &t_EI = "\<Esc>]50;CursorShape=0\x7:"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 
 " this machine config
