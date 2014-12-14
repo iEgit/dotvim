@@ -81,4 +81,8 @@
 [submodule "vundle"]
 	name = vundle
 	path = bundle/vundle
-	url = https://github.com/gmarik/vundle.git
+  url = https://github.com/gmarik/vundle.git
+[submodule "vim-stylus"]
+  name = vim-stylus
+  path = bundle/vim-stylus
+  url = git://github.com/wavded/vim-stylus.git
