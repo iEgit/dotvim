@@ -41,7 +41,7 @@
 [submodule "vim-fugitive"]
 	name = vim-fugitive
 	path = bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim-gitgutter"]
 	name = vim-gitgutter
 	path = bundle/vim-gitgutter
@@ -65,7 +65,7 @@
 [submodule "vim-sensible"]
 	name = vim-sensible
 	path = bundle/vim-sensible
-	url = git://github.com/tpope/vim-sensible.git
+	url = https://github.com/tpope/vim-sensible.git
 [submodule "vim-smooth-scroll"]
 	name = vim-smooth-scroll/
 	path = bundle/vim-smooth-scroll
@@ -81,8 +81,18 @@
 [submodule "vundle"]
 	name = vundle
 	path = bundle/vundle
-  url = https://github.com/gmarik/vundle.git
+    url = https://github.com/gmarik/vundle.git
 [submodule "vim-stylus"]
-  name = vim-stylus
-  path = bundle/vim-stylus
-  url = git://github.com/wavded/vim-stylus.git
+    name = vim-stylus
+    path = bundle/vim-stylus
+    url = https://github.com/wavded/vim-stylus.git
+[submodule "vim-snippets"]
+    name = vim-snippets
+    path = bundle/vim-snippets
+    url = https://github.com/honza/vim-snippets
+[submodule "vim-yate"]
+    name = vim-yate
+    path = bundle/vim-yate
+    url = https://github.com/maksimr/vim-yate
+    
+    
