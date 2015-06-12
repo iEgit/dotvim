@@ -94,5 +94,3 @@
     name = vim-yate
     path = bundle/vim-yate
     url = https://github.com/maksimr/vim-yate
-    
-    

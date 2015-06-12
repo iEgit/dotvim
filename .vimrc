@@ -183,7 +183,7 @@ map <Esc><Esc> :w<CR>
 " local configs
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
 " remove whitespaces
-autocmd BufWritePre *.js,*.styl,*.c,*.cc,*.py,*.yate :%s/\s\+$//ei
+autocmd BufWritePre * :%s/\s\+$//ei
 
 
 " cursor
