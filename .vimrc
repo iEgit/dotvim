@@ -15,6 +15,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'bling/vim-airline'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'maksimr/vim-yate'
 
 " Color Themes
 Bundle 'flazz/vim-colorschemes'
@@ -148,6 +149,10 @@ let mapleader = ','
 nnoremap <Leader>p :set paste<CR>
 nnoremap <Leader>o :set nopaste<CR>
 noremap  <Leader>g :GitGutterToggle<CR>
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
 
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
@@ -178,12 +183,18 @@ map <Esc><Esc> :w<CR>
 " local configs
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
 " remove whitespaces
-autocmd BufWritePre *.js,*.styl,*.c,*.cc,*.py,*.yate :%s/\s\+$//ei
+autocmd BufWritePre * :%s/\s\+$//ei
 
 
 " cursor
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+" autohighlight line in insert mode
+autocmd InsertEnter,InsertLeave * set cul!
+
+" add new line without entering insert mode
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
 
 " cursor for linux
 if has("autocmd")
