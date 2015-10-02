@@ -196,13 +196,6 @@ autocmd InsertEnter,InsertLeave * set cul!
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
-" cursor for linux
-if has("autocmd")
-    au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-      au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
-        au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-endif
-
 " this machine config
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
