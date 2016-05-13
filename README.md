@@ -4,7 +4,8 @@ My vim config
 
 ```sh
 git clone https://github.com/iEgit/dotvim
-mv ~/dotvim ~/.vim cd ~/.vim
+mv ~/dotvim ~/.vim 
+cd ~/.vim
 git submodule update --init
 
 " rename or remove current vimrc if it exists"
