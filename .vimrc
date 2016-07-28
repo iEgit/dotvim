@@ -138,8 +138,6 @@ nnoremap <C-n>  :tabnext<CR>
 inoremap <C-n>  <Esc>:tabnext<CR>i
 nnoremap <C-t>  :tabnew<CR>
 inoremap <C-t>  <Esc>:tabnew<CR>i
-nnoremap <C-w>  :tabclose<CR>
-inoremap <C-w>  <Esc>:tabclose<CR>i
 
 inoremap <C-s>  <Esc>:w<CR>i
 " lazy ':'
