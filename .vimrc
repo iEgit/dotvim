@@ -84,6 +84,7 @@ set nowritebackup
 set noswapfile
 set fileformats=unix,dos,mac
 
+
 " exit insert mode
 inoremap <C-c> <Esc>
 
@@ -112,8 +113,6 @@ let g:airline_powerline_fonts = 1
 "  most in visual mode / selection (v or ⇧ v)
 "
 
-" Find
-map <C-f> /
 " indend / deindent after selecting the text with (⇧ v), (.) to repeat.
 vnoremap <Tab> >
 vnoremap <S-Tab> <
@@ -123,11 +122,6 @@ vmap <C-m> gc
 let g:tcomment#replacements_xml={}
 " Text wrap simpler, then type the open tag or ',"
 vmap <C-w> S
-" Cut, Paste, Copy
-vmap <C-x> d
-vmap <C-v> p
-
-vmap <C-c> y
 
 " Tabs
 let g:airline_theme='badwolf'
@@ -147,10 +141,14 @@ let mapleader = ','
 nnoremap <Leader>p :set paste<CR>
 nnoremap <Leader>o :set nopaste<CR>
 noremap  <Leader>g :GitGutterToggle<CR>
+noremap  <Leader>f :NERDTreeFind<CR>
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+
+nnoremap - <C-y>
+nnoremap = <C-e>
 
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
@@ -172,6 +170,7 @@ autocmd vimenter * NERDTreeTabsOpen
 let g:nerdtree_tabs_autofind=1
 let NERDTreeShowHidden=1
 let NERDTreeMouseMode=2
+
 " keepin' highlight while tabbing
 vnoremap > ><CR>gv
 vnoremap < <<CR>gv
