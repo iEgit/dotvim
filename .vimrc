@@ -142,6 +142,7 @@ nnoremap <Leader>p :set paste<CR>
 nnoremap <Leader>o :set nopaste<CR>
 noremap  <Leader>g :GitGutterToggle<CR>
 noremap  <Leader>f :NERDTreeFind<CR>
+noremap  <Leader>t :NERDTreeToggle<CR>
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
