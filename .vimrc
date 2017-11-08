@@ -126,12 +126,13 @@ vmap <C-w> S
 " Tabs
 let g:airline_theme='badwolf'
 
-nnoremap <C-b>  :tabprevious<CR>
-inoremap <C-b>  <Esc>:tabprevious<CR>i
-nnoremap <C-n>  :tabnext<CR>
-inoremap <C-n>  <Esc>:tabnext<CR>i
-nnoremap <C-t>  :tabnew<CR>
-inoremap <C-t>  <Esc>:tabnew<CR>i
+nnoremap <C-h>  :tabprevious<CR>
+inoremap <C-h>  <Esc>:tabprevious<CR>i
+nnoremap <C-l>  :tabnext<CR>
+inoremap <C-l>  <Esc>:tabnext<CR>i
+
+nnoremap <C-j>  :tabnew<CR>
+inoremap <C-j>  <Esc>:tabnew<CR>i
 
 inoremap <C-s>  <Esc>:w<CR>i
 " lazy ':'
