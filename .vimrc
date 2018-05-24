@@ -99,14 +99,13 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 " Ultisnip
 " NOTE: <f1> otherwise it overrides <tab> forever
-let g:UltiSnipsExpandTrigger="<f1>"
-let g:UltiSnipsJumpForwardTrigger="<c-k>"
-let g:UltiSnipsJumpBackwardTrigger="<c-l>"
-let g:did_UltiSnips_vim_after = 1
+" let g:UltiSnipsExpandTrigger="<f1>"
+" let g:UltiSnipsJumpForwardTrigger="<c-k>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-l>"
+" let g:did_UltiSnips_vim_after = 1
 
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
 
 "
 " Basic shortcuts definitions
@@ -158,20 +157,20 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
 
 " Track the engine.
-Plugin 'SirVer/ultisnips'
+" Plugin 'SirVer/ultisnips'
 "
 " " Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
 
 Plugin 'Valloric/YouCompleteMe'
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>""
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>""
 
 
 Bundle 'jistr/vim-nerdtree-tabs'
 " nerdtree autostart
-autocmd vimenter * NERDTreeTabsOpen
+" autocmd vimenter * NERDTreeTabsOpen
 let g:nerdtree_tabs_autofind=1
 let NERDTreeShowHidden=1
 let NERDTreeMouseMode=2
@@ -212,3 +211,13 @@ nmap <CR> o<Esc>
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+set path+=**
+set wildmenu
+
+nnoremap <Leader>e :Explore<CR>
+nnoremap <Leader>s :vsplit<CR><C-w>l
+nnoremap <Leader>v :split<CR><C-w>j
+nnoremap <Leader>q :qa!<CR>
+nnoremap <Leader>w :wa<CR>
+nnoremap <Leader>, :terminal bash<CR>

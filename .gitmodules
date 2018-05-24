@@ -22,10 +22,6 @@
 	name = tlib_vim
 	path = bundle/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
-[submodule "ultisnips"]
-	name = ultisnips
-	path = bundle/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
 [submodule "vim-addon-mw-utils"]
 	name = vim-addon-mw-utils
 	path = bundle/vim-addon-mw-utils
