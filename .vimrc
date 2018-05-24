@@ -169,8 +169,6 @@ Plugin 'Valloric/YouCompleteMe'
 
 
 Bundle 'jistr/vim-nerdtree-tabs'
-" nerdtree autostart
-" autocmd vimenter * NERDTreeTabsOpen
 let g:nerdtree_tabs_autofind=1
 let NERDTreeShowHidden=1
 let NERDTreeMouseMode=2
