@@ -96,6 +96,8 @@ set completeopt=menuone,longest,preview
 
 " CtrlP
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+" https://github.com/kien/ctrlp.vim/issues/234#issuecomment-19874334
+let g:ctrlp_max_files = 0
 
 " Ultisnip
 " NOTE: <f1> otherwise it overrides <tab> forever
