@@ -93,3 +93,6 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "bundle/jsdoc.vim"]
+	path = bundle/jsdoc.vim
+	url = https://github.com/joegesualdo/jsdoc.vim.git

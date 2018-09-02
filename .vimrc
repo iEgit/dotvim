@@ -169,6 +169,9 @@ Plugin 'Valloric/YouCompleteMe'
 " let g:UltiSnipsJumpForwardTrigger="<c-b>"
 " let g:UltiSnipsJumpBackwardTrigger="<c-z>""
 
+" jsdoc plugin
+Plugin 'joegesualdo/jsdoc.vim'
+nnoremap jsd :<C-u>call JSDocAdd()<CR>
 
 Bundle 'jistr/vim-nerdtree-tabs'
 let g:nerdtree_tabs_autofind=1
