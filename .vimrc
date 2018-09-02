@@ -174,6 +174,7 @@ Plugin 'joegesualdo/jsdoc.vim'
 nnoremap jsd :<C-u>call JSDocAdd()<CR>
 
 Bundle 'jistr/vim-nerdtree-tabs'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 let g:nerdtree_tabs_autofind=1
 let NERDTreeShowHidden=1
 let NERDTreeMouseMode=2
