@@ -224,3 +224,5 @@ nnoremap <Leader>v :split<CR><C-w>j
 nnoremap <Leader>q :qa!<CR>
 nnoremap <Leader>w :wa<CR>
 nnoremap <Leader>, :terminal bash<CR>
+
+let g:ctrlp_custom_ignore = 'node_modules'
