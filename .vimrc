@@ -5,13 +5,13 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
+set rtp+=/usr/local/opt/fzf
 call vundle#rc()
 execute pathogen#infect()
 Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-surround'
 Bundle 'gcmt/breeze.vim'
-Bundle 'kien/ctrlp.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'bling/vim-airline'
 Bundle 'airblade/vim-gitgutter'
@@ -94,11 +94,6 @@ set completeopt=menuone,longest,preview
 " Plugins config
 "
 
-" CtrlP
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
-" https://github.com/kien/ctrlp.vim/issues/234#issuecomment-19874334
-let g:ctrlp_max_files = 0
-
 " Ultisnip
 " NOTE: <f1> otherwise it overrides <tab> forever
 " let g:UltiSnipsExpandTrigger="<f1>"
@@ -136,6 +131,7 @@ nnoremap <C-j>  :tabnew<CR>
 inoremap <C-j>  <Esc>:tabnew<CR>i
 
 inoremap <C-s>  <Esc>:w<CR>i
+inoremap <C-n>  <Esc>:redraw!<CR>i
 " lazy ':'
 map \ :
 
@@ -145,6 +141,7 @@ nnoremap <Leader>o :set nopaste<CR>
 noremap  <Leader>g :GitGutterToggle<CR>
 noremap  <Leader>f :NERDTreeFind<CR>
 noremap  <Leader>t :NERDTreeToggle<CR>
+noremap  <Leader>n :redraw!<CR>
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
@@ -224,5 +221,10 @@ nnoremap <Leader>v :split<CR><C-w>j
 nnoremap <Leader>q :qa!<CR>
 nnoremap <Leader>w :wa<CR>
 nnoremap <Leader>, :terminal bash<CR>
+nnoremap <Leader>p :FZF<CR>
 
-let g:ctrlp_custom_ignore = 'node_modules'
+let g:auto_type_info=0
+let g:ycm_confirm_extra_conf = 0
+set completeopt-=preview
+let g:ycm_enable_diagnostic_signs = 0
+let g:fzf_layout = { 'down': '~80%' }
