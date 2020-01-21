@@ -5,7 +5,7 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
-set rtp+=~/.fzf
+set rtp+=/usr/local/opt/fzf
 call vundle#rc()
 execute pathogen#infect()
 Bundle 'gmarik/vundle'
@@ -131,17 +131,13 @@ nnoremap <C-j>  :tabnew<CR>
 inoremap <C-j>  <Esc>:tabnew<CR>i
 
 inoremap <C-s>  <Esc>:w<CR>i
-inoremap <C-n>  <Esc>:redraw!<CR>i
 " lazy ':'
 map \ :
 
 let mapleader = ','
-nnoremap <Leader>p :set paste<CR>
-nnoremap <Leader>o :set nopaste<CR>
 noremap  <Leader>g :GitGutterToggle<CR>
 noremap  <Leader>f :NERDTreeFind<CR>
 noremap  <Leader>t :NERDTreeToggle<CR>
-noremap  <Leader>n :redraw!<CR>
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
@@ -192,13 +188,9 @@ autocmd BufWritePre * :%s/\s\+$//ei
 " tmux will only forward escape sequences to the terminal if surrounded by a DCS sequence
 " http://sourceforge.net/mailarchive/forum.php?thread_name=AANLkTinkbdoZ8eNR1X2UobLTeww1jFrvfJxTMfKSq-L%2B%40mail.gmail.com&forum_name=tmux-users
 
-if exists('$TMUX')
-  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-else
-  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-endif
+let &t_SI = "\<Esc>Ptmux;\<Esc>\e[5 q\<Esc>\\"
+let &t_EI = "\<Esc>Ptmux;\<Esc>\e[2 q\<Esc>\\"
+
 
 " autohighlight line in insert mode
 autocmd InsertEnter,InsertLeave * set cul!
@@ -220,11 +212,18 @@ nnoremap <Leader>s :vsplit<CR><C-w>l
 nnoremap <Leader>v :split<CR><C-w>j
 nnoremap <Leader>q :qa!<CR>
 nnoremap <Leader>w :wa<CR>
-nnoremap <Leader>, :terminal bash<CR>
+nnoremap <Leader>n :terminal bash<CR>
 nnoremap <Leader>p :FZF<CR>
+nnoremap <Leader>o :VimroomToggle<CR>
 
-let g:auto_type_info=0
+let g:auto_type_info = 0
 let g:ycm_confirm_extra_conf = 0
 set completeopt-=preview
 let g:ycm_enable_diagnostic_signs = 0
 let g:fzf_layout = { 'down': '~80%' }
+let g:vimroom_sidebar_height = 0
+let g:vimroom_navigational_keys = 0
+let g:vimroom_scrolloff = 0
+
+set pastetoggle=<F2>
+autocmd BufEnter *.tsx set filetype=typescript
