@@ -5,7 +5,7 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
-set rtp+=/usr/local/opt/fzf
+set rtp+=~/.fzf
 call vundle#rc()
 execute pathogen#infect()
 Bundle 'gmarik/vundle'
